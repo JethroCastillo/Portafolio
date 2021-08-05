@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Bootstrap & Bootswatch
 @import "~bootstrap/scss/bootstrap";
 @import "~bootswatch/dist/cosmo/variables";
 @import "~bootswatch/dist/cosmo/bootswatch";
+// Charts Styles:
+@import "~c3/c3.min.css";
