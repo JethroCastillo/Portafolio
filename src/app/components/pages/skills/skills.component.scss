@@ -6,3 +6,13 @@
     font-family: 'Numans', sans-serif;
     align-content: center;
     }
+
+    .row{
+        display: grid;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        width: 100%;
+    }
+
+
+    
