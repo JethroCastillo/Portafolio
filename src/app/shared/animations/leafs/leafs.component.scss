@@ -1,0 +1,58 @@
+
+// ***Animacion de hojas***
+
+.leafs{
+    z-index: 10;
+    position:absolute;
+    max-width: 100%;
+    max-height: 100%;
+    //Afecto de caida
+    animation-duration: 5s;
+    animation-name: drop, fade ;
+    animation-iteration-count:infinite, infinite;
+    animation-direction:normal, normal;
+    animation-timing-function:linear, ease-in;
+    
+}
+
+.leafs>img{
+    width: 50px;
+    height: 50px;
+    max-width: 100%;
+    max-height: 100%;
+
+    //rotara la hoja
+    animation-name: spinAndFlip;
+    animation-duration: 7s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+    
+    transform-origin: 150% -100%;
+    animation-duration: 5s;
+}
+
+@keyframes drop {
+    0% { transform: translate(0px, -30px); }
+    100% { transform: translate(0px, 250px); }
+}
+
+@keyframes fade {
+    0%   { opacity: 1; }
+    85%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes clockSpin{
+    0%{transform: rotate(-50deg);}
+    100%{transform: rotate(-120deg);}
+}
+
+@keyframes spinAndFlip 
+{
+    /* Flip a leaf and rotate it by 50 degrees in 2D space at the start of the animation */
+    0%   { -webkit-transform: scale(1, 1) rotate(-50deg); }
+    100% { -webkit-transform: scale(-1, 1) rotate(20deg); }
+}
+
+//  more info in: https://webkit.org/blog-files/leaves/index.html
