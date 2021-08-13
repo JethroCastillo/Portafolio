@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeafsComponent implements OnInit {
 
-  imgleafs = ['https://cdn11.bigcommerce.com/s-hii7479o/images/stencil/original/products/13255/31347/leaf__40593.1560276423.png?c=2', "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Leaf_icon_15.svg/1003px-Leaf_icon_15.svg.png", "https://pic.onlinewebfonts.com/svg/img_498940.png", "https://www.pinclipart.com/picdir/big/120-1209055_leaf-icons-download-for-free-in-png-and.png"];
+  imgleafs = ['https://cdn11.bigcommerce.com/s-hii7479o/images/stencil/original/products/13255/31347/leaf__40593.1560276423.png?c=2', "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Leaf_icon_15.svg/1003px-Leaf_icon_15.svg.png", "https://www.pinclipart.com/picdir/big/120-1209055_leaf-icons-download-for-free-in-png-and.png"];
 
   constructor(private el:ElementRef, private render: Renderer2) { }
   
@@ -39,20 +39,17 @@ export class LeafsComponent implements OnInit {
     // Create the elements
     var leafDiv = this.render.createElement('div');
     var image = this.render.createElement('img');
-
-    // Get Random Item 
-    image.src = this.randomArr(this.imgleafs);
-
     // Leaf div Animations 
     leafDiv.className = 'leafs';
-    leafDiv.style.left = this.randomVal(100,700) +'px';
+    leafDiv.style.left = this.randomVal(25,450) +'px';
     leafDiv.style.animationName = 'drop, fade';
     leafDiv.style.animationDuration = this.randomVal(3,12) +'s';
-
+    // Get Random Item 
+    image.src = this.randomArr(this.imgleafs);
     // leaf img Animations
     image.style.animationName = 'spinAndFlip';
     image.style.animationDuration = this.randomVal(3,9)+'s';
-
+    //put the img on the div leafs
     leafDiv.appendChild(image);
 
     return leafDiv;

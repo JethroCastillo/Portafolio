@@ -1,18 +1,18 @@
-.container-mg{
-    background-image: url('https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    font-family: 'Numans', sans-serif;
-    align-content: center;
-    }
+.container-mg {
+  background-image: url("https://st.depositphotos.com/1522993/4737/v/600/depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  align-content: center;
+}
 
-    .row{
-        display: grid;
-        grid-auto-rows: 22rem;
-        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-        width: 100%;
-    }
+.row {
+  display: grid;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  width: 100%;
+}
 
-
-    
+.sphere{
+  overflow: hidden;
+}

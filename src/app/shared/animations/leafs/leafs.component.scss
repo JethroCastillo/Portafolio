@@ -3,7 +3,7 @@
 
 .leafs{
     z-index: 10;
-    position:absolute;
+    position: absolute;
     max-width: 100%;
     max-height: 100%;
     //Afecto de caida
@@ -16,6 +16,7 @@
 }
 
 .leafs>img{
+    z-index: 10;
     width: 50px;
     height: 50px;
     max-width: 100%;
@@ -56,3 +57,16 @@
 }
 
 //  more info in: https://webkit.org/blog-files/leaves/index.html
+
+@media only screen and (max-width: 450px){
+.leafs{
+    max-width: 50%;
+    left: -25px;
+    
+    img{
+        width: 30px;
+        height: 30px;
+        
+    }
+}
+}
