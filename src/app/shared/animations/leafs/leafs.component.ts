@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeafsComponent implements OnInit {
 
-  imgleafs = ['https://cdn11.bigcommerce.com/s-hii7479o/images/stencil/original/products/13255/31347/leaf__40593.1560276423.png?c=2', "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Leaf_icon_15.svg/1003px-Leaf_icon_15.svg.png", "https://www.pinclipart.com/picdir/big/120-1209055_leaf-icons-download-for-free-in-png-and.png"];
+  imgleafs = [
+  "https://res.cloudinary.com/dyjo8cam3/image/upload/v1628910905/Leafs/120-1209055_leaf-icons-download-for-free-in-png-and_prf3p9.png", 
+  "https://res.cloudinary.com/dyjo8cam3/image/upload/v1628910905/Leafs/1003px-Leaf_icon_15.svg_ssavax.png", 
+  "https://res.cloudinary.com/dyjo8cam3/image/upload/v1628910905/Leafs/leaf__40593.1560276423_zxdthe.png"
+  ];
 
   constructor(private el:ElementRef, private render: Renderer2) { }
   
